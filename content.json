@@ -1,71 +1,74 @@
 {
-  "updated": "2026-06-15",
+  "updated": "2026-06-18",
   "headlines": [
     {
-      "title": "UK Reform Party Surges to 27% in Latest Polls",
-      "summary": "Nigel Farage's Reform UK has overtaken both Labour and the Conservatives in the latest YouGov polling, reaching 27% support nationwide. The party's anti-immigration stance and promises of sweeping tax cuts continue to resonate with voters disillusioned by the Starmer government's austerity measures. Political analysts warn that if this trend holds, the next general election could produce the most fragmented result in post-war British history. Farage has called for early elections, citing the government's failure to deliver on its 'Change' mandate.",
-      "source": "The Guardian / Reuters",
+      "title": "US and Iran Reach Deal to End War and Reopen Strait of Hormuz",
+      "summary": "President Trump announced a breakthrough agreement with Iran to end the months-long war and reopen the Strait of Hormuz, the world's most critical oil chokepoint. Pakistani Prime Minister Shehbaz Sharif confirmed the deal, which followed weeks of back-channel negotiations. While the agreement halts active hostilities, several contentious issues — including Iran's nuclear program and sanctions relief — were deliberately set aside for future talks. Markets reacted with cautious optimism as oil prices, which had spiked since the conflict began in late February, began to retreat.",
+      "source": "NPR / Reuters",
       "tag": "Politics",
       "vocab": [
-        { "word": "surges", "korean": "급등하다, 치솟다" },
-        { "word": "disillusioned", "korean": "환멸을 느낀, 기대가 무너진" },
-        { "word": "austerity measures", "korean": "긴축 재정 정책" },
-        { "word": "fragmented", "korean": "분열된, 파편화된" }
+        { "word": "breakthrough", "korean": "돌파구, 큰 진전" },
+        { "word": "chokepoint", "korean": "(전략적) 길목, 요충지" },
+        { "word": "back-channel", "korean": "비공식 (물밑) 외교 경로" },
+        { "word": "contentious", "korean": "논쟁의 여지가 있는, 다툼이 많은" },
+        { "word": "retreat", "korean": "(가격이) 후퇴하다, 하락하다" }
       ]
     },
     {
-      "title": "Fed Signals Two More Rate Cuts Possible in 2026 H2",
-      "summary": "Federal Reserve Chair Jerome Powell indicated on Thursday that two additional quarter-point rate cuts remain on the table for the second half of 2026, contingent on inflation staying near the 2% target. Markets rallied sharply on the news, with the S&P 500 gaining 1.4% and the Nasdaq up 1.9%. Economists at Goldman Sachs revised their year-end forecast, projecting the federal funds rate at 3.75–4.00% by December. The dovish pivot comes amid slowing job growth and easing core PCE inflation, though Powell cautioned that tariff-related price pressures remain an upside risk.",
-      "source": "Bloomberg / WSJ",
+      "title": "Fed Holds Rates at 3.5–3.75% in Warsh's First Meeting as Chair",
+      "summary": "The Federal Open Market Committee voted unanimously to keep its benchmark rate at 3.5%–3.75% at the June meeting, the first chaired by new Fed chief Kevin Warsh. Officials raised their 2026 inflation outlook to 3.6% headline and 3.3% core, up sharply from March, after the Iran war pushed CPI to a 4.2% annual rate — the highest since April 2023. The committee's projections now imply at least one rate hike this year, with nine of eighteen members anticipating higher rates. Warsh signaled he would 'look through' supply-shock inflation and views AI as ultimately disinflationary.",
+      "source": "CNBC / Kiplinger",
       "tag": "Economy",
       "vocab": [
-        { "word": "contingent on", "korean": "~에 달린, ~를 조건으로" },
-        { "word": "rallied", "korean": "(주가가) 반등하다, 상승하다" },
-        { "word": "dovish pivot", "korean": "비둘기파적 전환 (금리 인하 성향으로 바뀜)" },
-        { "word": "upside risk", "korean": "상방 리스크 (예상보다 높아질 위험)" }
+        { "word": "benchmark rate", "korean": "기준 금리" },
+        { "word": "unanimously", "korean": "만장일치로" },
+        { "word": "headline (inflation)", "korean": "헤드라인 물가 (전체 품목 기준)" },
+        { "word": "supply-shock", "korean": "공급 충격 (공급 측 요인의 급변)" },
+        { "word": "disinflationary", "korean": "물가 상승 둔화를 유발하는" }
       ]
     },
     {
-      "title": "EU and Mercosur Finalize Historic Trade Deal After 25 Years",
-      "summary": "The European Union and the Mercosur bloc — comprising Brazil, Argentina, Uruguay, and Paraguay — have formally signed a landmark free-trade agreement, ending over two decades of negotiations. The deal eliminates tariffs on roughly €45 billion worth of annual trade, giving European automakers and pharmaceutical firms greater market access while opening the EU to cheaper agricultural imports. French farmers have threatened renewed protests, and ratification by all 27 EU member states is expected to take at least 18 months.",
-      "source": "Reuters / Financial Times",
+      "title": "Bank of Japan Lifts Rates to Highest in Decades, Diverging from Fed",
+      "summary": "The Bank of Japan has raised interest rates to their highest level in decades, marking a sharp divergence from the cautious stance of other major central banks. The move reflects the BOJ's growing confidence that Japan has durably escaped the deflationary trap that gripped its economy for a generation. The decision has strengthened the yen and reverberated through global bond markets, as Japanese investors — among the world's largest holders of foreign debt — face new incentives to repatriate capital. Analysts warn the shift could ripple into US Treasury yields and emerging-market funding.",
+      "source": "J.P. Morgan Research / CNBC",
       "tag": "Economy",
       "vocab": [
-        { "word": "landmark", "korean": "획기적인, 역사적인" },
-        { "word": "tariffs", "korean": "관세" },
-        { "word": "ratification", "korean": "비준 (공식 승인 절차)" },
-        { "word": "bloc", "korean": "(공동 이익을 가진) 국가 연합체" }
+        { "word": "divergence", "korean": "(정책) 괴리, 갈라짐" },
+        { "word": "deflationary trap", "korean": "디플레이션 함정" },
+        { "word": "reverberated", "korean": "(영향이) 파급되다, 울려 퍼지다" },
+        { "word": "repatriate capital", "korean": "자본을 본국으로 회수하다" },
+        { "word": "ripple into", "korean": "~로 파급되다, 잔물결처럼 번지다" }
       ]
     }
   ],
   "analysis": [
     {
-      "title": "Why Is the Global Right Winning — and What Comes Next?",
-      "title_ko": "왜 전 세계적으로 우파가 득세하고 있나 — 그리고 앞으로 어떻게 될까?",
+      "title": "Why Do Wars Cause Inflation — and Should Central Banks Ignore It?",
+      "title_ko": "전쟁은 왜 인플레이션을 일으키나 — 그리고 중앙은행은 이를 무시해야 하나?",
       "sections": [
         {
-          "question": "Q1. Is the global shift to the right a coordinated movement or independent national trends?",
-          "question_ko": "Q1. 전 세계적인 우경화 흐름은 조율된 움직임인가, 아니면 각국 독립적 현상인가?",
-          "answer": "At first glance, the simultaneous rise of right-wing populist parties across the US, UK, France, Germany, Italy, and the Netherlands looks like a coordinated movement. But political scientists argue it is better understood as parallel national reactions to a shared set of pressures — deindustrialization, immigration anxiety, and elite cultural detachment — rather than a top-down campaign.\n\nWhat makes 2024–2026 distinctive is the presence of transnational amplification: social media ecosystems allow Farage's rhetoric to borrow from Trump's playbook, and Meloni's governing style to inspire Le Pen's repositioning. The infrastructure of ideas flows freely; the votes are still cast in national booths.\n\nThe common denominator is a sense of 'left-behind' identity among working-class and lower-middle-class voters who feel that mainstream parties — whether centre-left or centre-right — manage the system for cosmopolitan elites while lecturing everyone else about diversity and climate.",
-          "answer_ko": "언뜻 보면 미국·영국·프랑스·독일·이탈리아·네덜란드에서 우파 포퓰리즘 정당이 동시다발적으로 부상하는 것이 조율된 움직임처럼 보입니다. 그러나 정치학자들은 이를 하향식 캠페인이라기보다 탈산업화, 이민 불안, 엘리트 문화 괴리라는 공통 압력에 대한 각국의 병렬적 반응으로 보는 것이 더 정확하다고 말합니다.\n\n2024~2026년을 특별하게 만드는 것은 초국가적 증폭 효과입니다. 소셜 미디어 생태계는 패라지의 수사가 트럼프의 전략을 차용하고, 멜로니의 집권 방식이 르펜의 재포지셔닝에 영감을 주는 것을 가능하게 합니다. 아이디어의 인프라는 자유롭게 흐르지만, 표는 여전히 각국의 투표함에서 행사됩니다.\n\n공통분모는 '소외된' 정체성입니다. 중도좌파든 중도우파든 주류 정당들이 세계화 엘리트를 위해 시스템을 관리하면서 나머지 사람들에게는 다양성과 기후에 대해 훈계만 한다고 느끼는 노동자계층과 중하위 중산층 유권자들의 분노가 배경에 있습니다."
+          "question": "Q1. Why does a regional war thousands of miles away push up prices in the US and Europe?",
+          "question_ko": "Q1. 수천 마일 떨어진 지역 전쟁이 왜 미국과 유럽의 물가를 끌어올리나?",
+          "answer": "The mechanism is rooted in the structure of global commodity markets, where prices are set at the margin and react instantly to expected future scarcity rather than present-day supply. When conflict threatens the Strait of Hormuz — through which roughly a fifth of the world's seaborne oil passes — traders immediately price in the risk that supply could be disrupted, even before a single tanker is actually blocked. This is why oil spiked the moment the Iran war began in late February, dragging the US CPI to 4.2%.\n\nFrom there, energy costs propagate through the entire economy. Diesel powers the trucks that move every physical good; natural gas feeds fertilizer production and therefore food prices; jet fuel reprices air travel. Economists call these 'second-round effects' — the initial energy shock works its way into the cost of producing and transporting nearly everything, so a narrow oil shock becomes broad-based inflation within months.\n\nThe final amplifier is expectations. Once businesses and workers believe higher inflation is here to stay, firms raise prices preemptively and workers demand higher wages, which can make the inflation self-fulfilling even after the original shock fades. This is precisely the dynamic central bankers fear most, because it is far harder to reverse than the initial price spike.",
+          "answer_ko": "그 메커니즘은 글로벌 원자재 시장의 구조에 뿌리를 두고 있습니다. 이 시장에서 가격은 한계(마진)에서 결정되며, 현재의 공급보다 미래에 예상되는 희소성에 즉각 반응합니다. 분쟁이 호르무즈 해협 — 전 세계 해상 원유의 약 5분의 1이 지나가는 길목 — 을 위협하면, 트레이더들은 단 한 척의 유조선도 실제로 막히기 전에 공급 차질 위험을 곧바로 가격에 반영합니다. 이것이 2월 말 이란 전쟁이 시작되자마자 유가가 급등하며 미국 소비자물가지수(CPI)를 4.2%까지 끌어올린 이유입니다.\n\n거기서부터 에너지 비용은 경제 전체로 전파됩니다. 디젤은 모든 물건을 운반하는 트럭을 움직이고, 천연가스는 비료 생산에 들어가 결국 식료품 가격에 영향을 미치며, 항공유는 항공 운임을 다시 책정하게 합니다. 경제학자들은 이를 '2차 효과'라고 부릅니다. 최초의 에너지 충격이 거의 모든 것의 생산·운송 비용에 스며들어, 좁은 범위의 유가 충격이 수개월 안에 광범위한 인플레이션으로 번지는 것입니다.\n\n마지막 증폭 요인은 기대 심리입니다. 일단 기업과 노동자가 높은 인플레이션이 지속될 것이라 믿게 되면, 기업은 선제적으로 가격을 올리고 노동자는 더 높은 임금을 요구하며, 이는 최초의 충격이 사라진 뒤에도 인플레이션을 자기실현적으로 만들 수 있습니다. 바로 이 역학이 중앙은행이 가장 두려워하는 것인데, 초기의 가격 급등보다 되돌리기가 훨씬 어렵기 때문입니다."
         },
         {
-          "question": "Q2. Does fiscal conservatism actually help ordinary workers — or just the wealthy?",
-          "question_ko": "Q2. 재정 보수주의(작은 정부·감세)는 실제로 일반 노동자에게 도움이 되나, 아니면 부유층만 이득을 보나?",
-          "answer": "This is the central tension inside right-wing populist economic policy, and it is rarely resolved honestly. Classic supply-side theory holds that cutting taxes on businesses and high earners spurs investment, raises productivity, and eventually lifts wages across the board — the 'trickle-down' hypothesis. Most empirical studies since the 1980s, including IMF and OECD meta-analyses, find weak evidence for significant trickle-down effects at high-income levels.\n\nReform UK's proposal to raise the income tax threshold to £20,000 is the exception worth noting: it would primarily benefit low-to-middle earners and is a genuinely populist tax cut, not a wealthy-donor giveaway. The fiscal math, however, is contested — critics estimate an annual cost of £50–80 billion that would require deep public service cuts to offset.\n\nThe political genius of right-wing populism is packaging tax cuts as anti-elite rebellion rather than pro-wealth policy, which deflects scrutiny onto cultural grievances instead.",
-          "answer_ko": "이것이 우파 포퓰리즘 경제정책의 핵심 긴장이지만, 솔직하게 해결되는 경우는 드뭅니다. 공급 측 경제학 이론은 기업과 고소득층에 대한 감세가 투자를 촉진하고 생산성을 높여 결국 전반적인 임금 상승으로 이어진다고 주장합니다. 이른바 '낙수 효과' 가설입니다. 그러나 IMF와 OECD의 메타 분석을 포함한 1980년대 이후 대부분의 실증 연구는 고소득 수준에서 유의미한 낙수 효과의 증거가 약하다는 결론을 내립니다.\n\n리폼 UK의 소득세 면세 기준을 2만 파운드로 상향하는 제안은 주목할 만한 예외입니다. 이는 주로 저중소득 계층에게 혜택을 주는, 진정한 의미의 포퓰리즘적 감세안입니다. 다만 재정 수지 계산은 논란의 여지가 있어 비평가들은 연간 500~800억 파운드의 비용이 발생해 이를 상쇄하려면 대규모 공공 서비스 삭감이 필요하다고 추산합니다.\n\n우파 포퓰리즘의 정치적 천재성은 감세를 친부유층 정책이 아닌 반엘리트 반란으로 포장하여, 비판의 시선을 경제 문제 대신 문화적 불만으로 돌린다는 데 있습니다."
+          "question": "Q2. New Fed chair Kevin Warsh says he will 'look through' this inflation. What does that mean, and is it risky?",
+          "question_ko": "Q2. 신임 연준 의장 케빈 워시는 이번 인플레이션을 '간과(look through)'하겠다고 합니다. 무슨 뜻이며, 위험한 것인가?",
+          "answer": "To 'look through' inflation means the central bank deliberately chooses not to raise interest rates in response to a price spike, on the judgment that the spike is temporary and supply-driven rather than a sign of an overheating economy. The logic is that rate hikes work by crushing demand, but a war-driven oil shock is a supply problem — raising rates cannot produce more oil, it would only inflict unnecessary pain on jobs and growth while the shock fades on its own.\n\nThis is not a fringe view. The textbook prescription for a pure supply shock is indeed to look through it, and the European Central Bank broadly did this during past energy crises. Warsh is also leaning on a structural argument: that artificial intelligence is exerting a powerful disinflationary force by raising productivity and lowering costs across services, which gives the Fed room to tolerate a temporary energy spike without losing control of underlying inflation.\n\nThe risk is one of credibility and timing. The Fed badly misjudged the 'transitory' inflation of 2021–2022 by looking through too long, and was then forced into the most aggressive hiking cycle in decades. If Warsh looks through and inflation expectations become unanchored — meaning the public stops believing the Fed will return inflation to 2% — the eventual cost of restoring credibility could be a sharp recession. That is why nine of eighteen committee members are signaling they want at least one hike as insurance, revealing a genuine split at the heart of the new Fed.",
+          "answer_ko": "인플레이션을 '간과한다'는 것은 중앙은행이 가격 급등에 대응해 금리를 올리지 않기로 의도적으로 선택하는 것을 의미합니다. 그 급등이 과열된 경제의 신호가 아니라 일시적이고 공급에서 비롯된 것이라는 판단에서입니다. 그 논리는 이렇습니다. 금리 인상은 수요를 짓눌러 작동하지만, 전쟁발 유가 충격은 공급 문제입니다 — 금리를 올린다고 원유가 더 생산되지는 않으며, 충격이 저절로 사라지는 동안 고용과 성장에 불필요한 고통만 가할 뿐입니다.\n\n이는 변방의 견해가 아닙니다. 순수한 공급 충격에 대한 교과서적 처방은 실제로 그것을 간과하는 것이며, 유럽중앙은행(ECB)도 과거 에너지 위기 당시 대체로 이렇게 했습니다. 워시는 또한 구조적 논거에 기대고 있습니다. 인공지능이 생산성을 높이고 서비스 전반의 비용을 낮춰 강력한 물가 하락 압력을 가하고 있으며, 이것이 연준에게 기저 인플레이션 통제력을 잃지 않으면서 일시적 에너지 급등을 용인할 여지를 준다는 것입니다.\n\n위험은 신뢰성과 타이밍의 문제입니다. 연준은 2021~2022년의 '일시적' 인플레이션을 너무 오래 간과하여 심각하게 오판했고, 그 결과 수십 년 만에 가장 공격적인 금리 인상 사이클로 떠밀렸습니다. 만약 워시가 인플레이션을 간과하는 사이 기대 인플레이션이 고정 해제된다면 — 즉 대중이 연준이 물가를 2%로 되돌릴 것이라 더는 믿지 않게 된다면 — 신뢰를 회복하는 데 드는 궁극적 비용은 급격한 경기 침체일 수 있습니다. 바로 이 때문에 18명의 위원 중 9명이 보험 차원에서 최소 한 차례의 인상을 원한다는 신호를 보내고 있으며, 이는 새로운 연준의 핵심부에 실재하는 분열을 드러냅니다."
         }
       ]
     },
     {
-      "title": "The AI Productivity Paradox: Why Economists Can't Agree",
-      "title_ko": "AI 생산성의 역설: 경제학자들이 의견을 모으지 못하는 이유",
+      "title": "Japan's Rate Hike: Why the End of 'Free Money' Echoes Worldwide",
+      "title_ko": "일본의 금리 인상: '공짜 돈'의 종말이 전 세계에 울려 퍼지는 이유",
       "sections": [
         {
-          "question": "Q1. Are AI tools actually raising economic productivity at scale?",
-          "question_ko": "Q1. AI 툴이 실제로 경제 전체의 생산성을 높이고 있나?",
-          "answer": "Official GDP and productivity statistics have so far failed to capture a significant AI productivity boom, despite widespread corporate adoption of tools like GitHub Copilot and ChatGPT Enterprise. This echoes what economists call the 'Solow paradox' — Robert Solow's famous 1987 observation that 'you can see the computer age everywhere except in the productivity statistics.'\n\nThe reasons may be measurement lags, a 'learning curve' period before firms realize full efficiency gains, or that current AI tools primarily automate tasks within jobs rather than entire occupations, making macro effects diffuse and slow to show up. MIT economist Daron Acemoğlu argues that the most hyped use cases involve automating tasks that were already relatively cheap to perform, limiting aggregate impact.\n\nOptimists counter that the productivity dividend from electricity and the internet took 15–20 years to appear in GDP data — and that AI is on a similar long-horizon diffusion curve.",
-          "answer_ko": "기업들의 광범위한 AI 도입에도 불구하고, 공식 GDP 및 생산성 통계는 지금까지 AI가 일으킨 생산성 급등을 포착하지 못하고 있습니다. 이는 경제학자들이 '솔로우 역설'이라고 부르는 현상, 즉 로버트 솔로우가 1987년에 남긴 유명한 말 '컴퓨터 시대는 생산성 통계를 제외한 모든 곳에서 보인다'를 연상시킵니다.\n\n그 이유는 측정 시차, 기업이 효율성 향상을 완전히 실현하기 전의 '학습 곡선' 기간, 또는 현재 AI 도구들이 직업 전체가 아닌 직무 내 개별 업무를 자동화하는 데 그쳐 거시경제적 효과가 분산되어 나타나기 때문일 수 있습니다. MIT 경제학자 다론 아제모글루는 가장 과대 선전된 AI 적용 사례들이 원래부터 비용이 적게 드는 업무를 자동화하는 것이라 전체적 영향이 제한적이라고 주장합니다.\n\n낙관론자들은 전기와 인터넷의 생산성 효과도 GDP 통계에 나타나기까지 15~20년이 걸렸다고 반박합니다. AI도 비슷한 장기적 확산 곡선을 따르고 있다는 것입니다."
+          "question": "Q1. Japan kept rates near zero for a generation. Why does its rate hike matter for the rest of the world?",
+          "question_ko": "Q1. 일본은 한 세대 동안 금리를 0 근처로 유지했다. 그 금리 인상이 왜 나머지 세계에 중요한가?",
+          "answer": "For nearly three decades, Japan's near-zero interest rates made the yen the world's cheapest funding currency, giving rise to the 'yen carry trade.' Investors borrowed yen for almost nothing, converted it into higher-yielding assets abroad — US Treasuries, Australian bonds, emerging-market debt, even tech stocks — and pocketed the spread. This quietly recycled trillions of dollars of Japanese capital into global markets and helped suppress borrowing costs everywhere.\n\nWhen the Bank of Japan raises rates, that arithmetic inverts. Holding yen now pays something, and the gap between Japanese and foreign yields narrows, reducing the incentive to send capital abroad. Japanese institutions — among the largest foreign holders of US government debt — face a growing pull to repatriate money home, which can push up bond yields in the US and Europe and tighten financial conditions far beyond Japan's borders.\n\nThe deeper significance is symbolic as well as mechanical: Japan was the original laboratory for deflation and zero rates, the cautionary tale every other central bank studied. Its durable exit suggests the post-2008 era of permanently cheap money may genuinely be ending, with implications for how governments finance debt and how investors price risk for years to come.",
+          "answer_ko": "거의 30년 동안 일본의 제로에 가까운 금리는 엔화를 세계에서 가장 저렴한 조달 통화로 만들어, '엔 캐리 트레이드'를 낳았습니다. 투자자들은 거의 공짜로 엔화를 빌려 더 높은 수익을 주는 해외 자산 — 미국 국채, 호주 채권, 신흥국 채권, 심지어 기술주 — 으로 바꾼 뒤 그 금리 차익을 챙겼습니다. 이는 조용히 수조 달러의 일본 자본을 글로벌 시장으로 순환시켰고, 어디서나 차입 비용을 억누르는 데 일조했습니다.\n\n일본은행이 금리를 올리면 이 계산이 뒤집힙니다. 이제 엔화를 보유하는 것 자체가 수익을 내고, 일본과 해외 금리 간의 격차가 좁아져 자본을 해외로 보낼 유인이 줄어듭니다. 미국 국채의 최대 해외 보유자 중 하나인 일본 기관들은 자금을 본국으로 회수하려는 압력이 커지며, 이는 미국과 유럽의 채권 금리를 끌어올리고 일본 국경을 훨씬 넘어 금융 여건을 긴축시킬 수 있습니다.\n\n더 깊은 의미는 기계적인 동시에 상징적입니다. 일본은 디플레이션과 제로 금리의 원조 실험실이자, 다른 모든 중앙은행이 연구한 경고성 사례였습니다. 일본의 지속적인 탈출은 2008년 이후의 영구적 저금리 시대가 진정으로 막을 내리고 있을 수 있음을 시사하며, 이는 앞으로 수년간 정부의 부채 조달 방식과 투자자의 위험 가격 책정 방식에 영향을 미칩니다."
         }
       ]
     }
