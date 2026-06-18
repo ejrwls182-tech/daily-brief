@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily Dashboard</title>
+  <style>
+    :root {
+      --bg: #0f1117;
+      --surface: #1a1d27;
+      --surface2: #22263a;
+      --border: #2e3352;
+      --accent: #5b7fff;
+      --text: #e8eaf0;
+      --text2: #8b90a7;
+      --radius: 12px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; }
+
+    header { padding: 18px 28px 0; border-bottom: 1px solid var(--border); background: var(--surface); position: sticky; top: 0; z-index: 10; }
+    .header-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; }
+    .logo { font-size: 1.1rem; font-weight: 700; color: var(--text); }
+    .logo span { color: var(--accent); }
+    #date-badge { font-size: 0.78rem; color: var(--text2); background: var(--surface2); padding: 4px 12px; border-radius: 20px; border: 1px solid var(--border); }
+
+    nav { display: flex; gap: 2px; }
+    .tab-btn { padding: 9px 20px; background: none; border: none; border-bottom: 2px solid transparent; color: var(--text2); font-size: 0.88rem; font-weight: 500; cursor: pointer; transition: color 0.2s, border-color 0.2s; }
+    .tab-btn:hover { color: var(--text); }
+    .tab-btn.active { color: var(--accent); border-bottom-color: var(--accent); }
+
+    .tab-panel { display: none; padding: 24px 28px; max-width: 860px; margin: 0 auto; }
+    .tab-panel.active { display: block; }
+    .tab-panel-full { display: none; padding: 16px 20px; height: calc(100vh - 68px); flex-direction: column; }
+    .tab-panel-full.active { display: flex; }
+
+    .section-header { display: flex; align-items: baseline; gap: 12px; margin-bottom: 18px; }
+    .section-title { font-size: 1.15rem; font-weight: 700; }
+    .section-sub { font-size: 0.78rem; color: var(--text2); }
+
+    /* Headlines */
+    .headline-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px 22px; margin-bottom: 14px; transition: border-color 0.2s; }
+    .headline-card:hover { border-color: var(--accent); }
+    .headline-meta { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
+    .tag { font-size: 0.7rem; font-weight: 600; padding: 3px 9px; border-radius: 20px; text-transform: uppercase; letter-spacing: 0.05em; }
+    .tag-Politics { background: rgba(59,110,245,0.18); color: #7da4ff; }
+    .tag-Economy  { background: rgba(5,150,105,0.18); color: #34d399; }
+    .source { font-size: 0.73rem; color: var(--text2); }
+    .headline-title { font-size: 1rem; font-weight: 700; margin-bottom: 10px; line-height: 1.45; }
+    .headline-summary { font-size: 0.86rem; color: var(--text2); line-height: 1.75; margin-bottom: 14px; }
+
+    /* Vocab */
+    .vocab-section { border-top: 1px solid var(--border); padding-top: 12px; }
+    .vocab-label { font-size: 0.72rem; font-weight: 600; color: var(--text2); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 8px; }
+    .vocab-list { display: flex; flex-wrap: wrap; gap: 6px; }
+    .vocab-item { font-size: 0.78rem; background: var(--surface2); border: 1px solid var(--border); border-radius: 6px; padding: 4px 10px; }
+    .vocab-word { color: #f0c060; font-weight: 600; }
+    .vocab-sep { color: var(--border); margin: 0 4px; }
+    .vocab-ko { color: var(--text2); }
+
+    /* Analysis */
+    .analysis-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); margin-bottom: 20px; overflow: hidden; }
+    .analysis-header { padding: 16px 22px; background: var(--surface2); border-bottom: 1px solid var(--border); }
+    .analysis-title-en { font-size: 1rem; font-weight: 700; line-height: 1.4; margin-bottom: 4px; }
+    .analysis-title-ko { font-size: 0.82rem; color: var(--text2); }
+    .lang-toggle-bar { padding: 8px 22px; background: var(--surface2); border-bottom: 1px solid var(--border); display: flex; gap: 6px; align-items: center; }
+    .lang-btn { font-size: 0.75rem; padding: 3px 12px; border-radius: 20px; border: 1px solid var(--border); background: none; color: var(--text2); cursor: pointer; transition: all 0.15s; }
+    .lang-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+    .qa-item { padding: 16px 22px; border-bottom: 1px solid var(--border); }
+    .qa-item:last-child { border-bottom: none; }
+    .qa-question { font-size: 0.88rem; font-weight: 600; color: var(--accent); margin-bottom: 10px; line-height: 1.45; }
+    .qa-answer { font-size: 0.85rem; color: var(--text2); line-height: 1.85; white-space: pre-wrap; }
+    .qa-answer-ko { display: none; }
+
+    /* Embed */
+    .cold-start-notice { background: rgba(91,127,255,0.08); border: 1px solid rgba(91,127,255,0.25); border-radius: 8px; padding: 9px 14px; font-size: 0.78rem; color: var(--text2); margin-bottom: 10px; }
+    .embed-container { flex: 1; border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
+    .embed-container iframe { width: 100%; height: 100%; border: none; }
+
+    .loading-state { color: var(--text2); font-size: 0.88rem; padding: 40px; text-align: center; }
+  </style>
+</head>
+<body>
+<header>
+  <div class="header-top">
+    <div class="logo">Daily<span>Brief</span></div>
+    <div id="date-badge">—</div>
+  </div>
+  <nav>
+    <button class="tab-btn active" onclick="switchTab(0)">📰 News</button>
+    <button class="tab-btn"        onclick="switchTab(1)">💡 Analysis</button>
+    <button class="tab-btn"        onclick="switchTab(2)">📅 Schedule</button>
+  </nav>
+</header>
+
+<div class="tab-panel active" id="panel-0">
+  <div class="section-header">
+    <span class="section-title">Politics &amp; Economy</span>
+    <span class="section-sub" id="updated-label"></span>
+  </div>
+  <div id="headlines-list"><div class="loading-state">Loading…</div></div>
+</div>
+
+<div class="tab-panel" id="panel-1">
+  <div class="section-header">
+    <span class="section-title">Deep Analysis</span>
+    <span class="section-sub">updated daily</span>
+  </div>
+  <div id="analysis-list"><div class="loading-state">Loading…</div></div>
+</div>
+
+<div class="tab-panel-full" id="panel-2">
+  <div class="cold-start-notice">⏱ Render 무료 플랜 — 미사용 후 첫 접속 시 10–30초 로딩이 걸릴 수 있어요.</div>
+  <div class="embed-container">
+    <iframe src="https://new-kakao-talk-bot-2.onrender.com/" loading="lazy" title="Schedule & Meals"></iframe>
+  </div>
+</div>
+
+<script>
+  const panels = [...document.querySelectorAll('.tab-panel'), ...document.querySelectorAll('.tab-panel-full')];
+  panels.sort((a, b) => {
+    const idA = parseInt(a.id.split('-')[1]);
+    const idB = parseInt(b.id.split('-')[1]);
+    return idA - idB;
+  });
+  const buttons = document.querySelectorAll('.tab-btn');
+
+  function switchTab(i) {
+    panels.forEach((p, j) => p.classList.toggle('active', i === j));
+    buttons.forEach((b, j) => b.classList.toggle('active', i === j));
+  }
+
+  function setLang(cardEl, lang) {
+    cardEl.querySelectorAll('.qa-answer').forEach(el => el.style.display = lang === 'en' ? 'block' : 'none');
+    cardEl.querySelectorAll('.qa-answer-ko').forEach(el => el.style.display = lang === 'ko' ? 'block' : 'none');
+    cardEl.querySelectorAll('.qa-question-en').forEach(el => el.style.display = lang === 'en' ? 'block' : 'none');
+    cardEl.querySelectorAll('.qa-question-ko').forEach(el => el.style.display = lang === 'ko' ? 'block' : 'none');
+    cardEl.querySelectorAll('.lang-btn').forEach(btn => btn.classList.toggle('active', btn.dataset.lang === lang));
+  }
+
+  async function loadContent() {
+    const res = await fetch('content.json?t=' + Date.now());
+    const data = await res.json();
+
+    document.getElementById('date-badge').textContent = data.updated;
+    document.getElementById('updated-label').textContent = 'as of ' + data.updated;
+
+    // Headlines
+    document.getElementById('headlines-list').innerHTML = data.headlines.map(h => `
+      <div class="headline-card">
+        <div class="headline-meta">
+          <span class="tag tag-${h.tag}">${h.tag}</span>
+          <span class="source">${h.source}</span>
+        </div>
+        <div class="headline-title">${h.title}</div>
+        <div class="headline-summary">${h.summary}</div>
+        ${h.vocab && h.vocab.length ? `
+        <div class="vocab-section">
+          <div class="vocab-label">📘 Vocabulary</div>
+          <div class="vocab-list">
+            ${h.vocab.map(v => `
+              <div class="vocab-item">
+                <span class="vocab-word">${v.word}</span>
+                <span class="vocab-sep">—</span>
+                <span class="vocab-ko">${v.korean}</span>
+              </div>
+            `).join('')}
+          </div>
+        </div>` : ''}
+      </div>
+    `).join('');
+
+    // Analysis
+    document.getElementById('analysis-list').innerHTML = data.analysis.map((a, idx) => `
+      <div class="analysis-card" id="acard-${idx}">
+        <div class="analysis-header">
+          <div class="analysis-title-en">${a.title}</div>
+          ${a.title_ko ? `<div class="analysis-title-ko">${a.title_ko}</div>` : ''}
+        </div>
+        <div class="lang-toggle-bar">
+          <span style="font-size:0.72rem;color:var(--text2);margin-right:4px">언어:</span>
+          <button class="lang-btn active" data-lang="en" onclick="setLang(document.getElementById('acard-${idx}'), 'en')">English</button>
+          <button class="lang-btn" data-lang="ko" onclick="setLang(document.getElementById('acard-${idx}'), 'ko')">한국어</button>
+        </div>
+        <div class="analysis-sections">
+          ${a.sections.map(s => `
+            <div class="qa-item">
+              <div class="qa-question qa-question-en">${s.question}</div>
+              ${s.question_ko ? `<div class="qa-question qa-question-ko" style="display:none">${s.question_ko}</div>` : ''}
+              <div class="qa-answer">${s.answer}</div>
+              ${s.answer_ko ? `<div class="qa-answer qa-answer-ko" style="display:none">${s.answer_ko}</div>` : ''}
+            </div>
+          `).join('')}
+        </div>
+      </div>
+    `).join('');
+  }
+
+  loadContent().catch(() => {
+    document.getElementById('headlines-list').innerHTML = '<div class="loading-state">콘텐츠를 불러올 수 없습니다.</div>';
+    document.getElementById('analysis-list').innerHTML = '<div class="loading-state">콘텐츠를 불러올 수 없습니다.</div>';
+  });
+</script>
+</body>
+</html>
