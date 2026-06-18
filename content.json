@@ -3,6 +3,7 @@
   "headlines": [
     {
       "title": "US and Iran Reach Deal to End War and Reopen Strait of Hormuz",
+      "title_ko": "미국-이란, 전쟁 종식 및 호르무즈 해협 재개방 합의",
       "summary": "President Trump announced a breakthrough agreement with Iran to end the months-long war and reopen the Strait of Hormuz, the world's most critical oil chokepoint. Pakistani Prime Minister Shehbaz Sharif confirmed the deal, which followed weeks of back-channel negotiations. While the agreement halts active hostilities, several contentious issues — including Iran's nuclear program and sanctions relief — were deliberately set aside for future talks. Markets reacted with cautious optimism as oil prices, which had spiked since the conflict began in late February, began to retreat.",
       "source": "NPR / Reuters",
       "tag": "Politics",
@@ -16,6 +17,7 @@
     },
     {
       "title": "Fed Holds Rates at 3.5–3.75% in Warsh's First Meeting as Chair",
+      "title_ko": "연준, 워시 의장 첫 회의에서 금리 3.5~3.75% 동결",
       "summary": "The Federal Open Market Committee voted unanimously to keep its benchmark rate at 3.5%–3.75% at the June meeting, the first chaired by new Fed chief Kevin Warsh. Officials raised their 2026 inflation outlook to 3.6% headline and 3.3% core, up sharply from March, after the Iran war pushed CPI to a 4.2% annual rate — the highest since April 2023. The committee's projections now imply at least one rate hike this year, with nine of eighteen members anticipating higher rates. Warsh signaled he would 'look through' supply-shock inflation and views AI as ultimately disinflationary.",
       "source": "CNBC / Kiplinger",
       "tag": "Economy",
@@ -29,6 +31,7 @@
     },
     {
       "title": "Bank of Japan Lifts Rates to Highest in Decades, Diverging from Fed",
+      "title_ko": "일본은행, 금리 수십 년 만에 최고로 인상… 연준과 엇박자",
       "summary": "The Bank of Japan has raised interest rates to their highest level in decades, marking a sharp divergence from the cautious stance of other major central banks. The move reflects the BOJ's growing confidence that Japan has durably escaped the deflationary trap that gripped its economy for a generation. The decision has strengthened the yen and reverberated through global bond markets, as Japanese investors — among the world's largest holders of foreign debt — face new incentives to repatriate capital. Analysts warn the shift could ripple into US Treasury yields and emerging-market funding.",
       "source": "J.P. Morgan Research / CNBC",
       "tag": "Economy",

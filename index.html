@@ -46,7 +46,8 @@
     .tag-Politics { background: rgba(59,110,245,0.18); color: #7da4ff; }
     .tag-Economy  { background: rgba(5,150,105,0.18); color: #34d399; }
     .source { font-size: 0.73rem; color: var(--text2); }
-    .headline-title { font-size: 1rem; font-weight: 700; margin-bottom: 10px; line-height: 1.45; }
+    .headline-title { font-size: 1rem; font-weight: 700; margin-bottom: 4px; line-height: 1.45; }
+    .headline-title-ko { font-size: 0.85rem; font-weight: 500; color: var(--text2); margin-bottom: 10px; line-height: 1.4; }
     .headline-summary { font-size: 0.86rem; color: var(--text2); line-height: 1.75; margin-bottom: 14px; }
 
     /* Vocab */
@@ -159,6 +160,7 @@
           <span class="source">${h.source}</span>
         </div>
         <div class="headline-title">${h.title}</div>
+        ${h.title_ko ? `<div class="headline-title-ko">${h.title_ko}</div>` : ''}
         <div class="headline-summary">${h.summary}</div>
         ${h.vocab && h.vocab.length ? `
         <div class="vocab-section">
